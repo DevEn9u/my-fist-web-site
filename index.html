@@ -1,46 +1,17 @@
 <!doctype html>
 <html>
 <head>
-<title>Jesus Christ</title>
-<meta charset="utf-8">
-<style>
-    body {margin:0;}
-    a {color:black;text-decoration:none;}
-    h1 {font-size:60px; 
-        text-align:center; border-bottom:2px solid gray;
-        margin:0;
-        padding:20px;}
-    h2 {text-align:left ;}
-    .saw {color:gray}
-    #active {color:red}
-    #grid ol{
-        border-right:2px solid gray;
-        width:110px;
-        margin:0;
-        padding:20px;
-    }
-    #grid{
-        display:grid;
-        border:5px solid gray;
-        grid-template-columns: 150px 1fr;
-        }
-    #본문{
-        padding-left:10px;
-        padding-right:10px
-    }
-    @media(max-width:700px){
-        #grid{
-            display:block;
-        }
-        #grid ol{
-        border-right:none;}
-        h1 {font-size:40px; text-align:center;
-        border-bottom:none}
-        }
- </style>
+    <title>Jesus Christ</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
 </head>
 <body>
-        <h1><a href="index.html" style="color:red;">예수(Jesus Christ)</a></h1>
+    <h1><a href="index.html" style="color:darkkhaki;">예수(Jesus Christ)</a></h1>
+    <input type="button" value="Night" onclick="
+    NightDayHandler(this)
+    ">
     <div id="grid">
     <ol>
         <li><a href="1.html" class="saw">예수는 누구인가</a></li>
@@ -63,6 +34,7 @@
     </div>
 </div>
 </body>
+
 <p><div id="disqus_thread"></div>
     <script>
         /**
